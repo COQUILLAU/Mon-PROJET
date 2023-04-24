@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: done;
+    text-decoration: none;
+}
+body {
+    font-family:"Poppins";
+    background-image: url("../img/wakfu.png");
+    background-size: 100%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+}
+a {
+    color:rgb(165, 165, 165);
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-right: 24px;
+}
+a:hover {
+    color:white;
+    font-size:24px;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display:flex;
+    height: 110px;
+    border-radius: 0px 0px 32px 0px;
+    margin-right:25px;
+}
+.middle {
+    display:flex;
+    align-items: center;
+    margin-left:50px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    margin-right:100px;
+}
+i {
+    margin-right:10px;
+}
+
+
+
+
+
+
+#carousel {
+	position: relative;
+	height: 330px;
+	top: 40%;
+	overflow: hidden;
+    border-bottom-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+}
+
+#carousel div {
+	position: absolute;
+	transition: transform 0.4s, left 0.4s, opacity 0.4s, z-index 0s;
+	opacity: 1;
+    margin-top:25px;
+}
+
+#carousel img {
+	width: 250px;
+	transition: width 0.4s;
+    border: solid 4px;
+    border-radius: 200px;
+}
+
+#carousel .hideLeft {
+	left: 0%;
+	opacity: 0;
+}
+
+#carousel .hideLeft {
+	left: 0%;
+	opacity: 0;
+}
+
+#carousel .hideLeft img {
+	width: 175px;
+}
+
+#carousel .hideRight {
+	left: 150%;
+	opacity: 0;
+}
+
+#carousel .hideRight img {
+	width: 175px;
+}
+
+#carousel .prev {
+	z-index: 5;
+	left: 30%;
+}
+
+#carousel .prev img {
+	width: 175px;
+}
+
+#carousel .prevLeftSecond {
+	z-index: 4;
+    left:15%;
+}
+
+#carousel .prevLeftSecond img {
+	width: 175px;
+}
+
+#carousel .selected {
+    z-index: 10;
+    width: 250px;
+	left: 45%;
+}
+#carousel .selected section {
+    width: 150%;
+}
+#carousel .selected section a{
+    position: relative;
+    display: flex;
+    left: 255px;
+    bottom: 53px;
+    border-radius: 20px;
+    border: solid 2px white;
+    width: 65%;
+    animation: shadow 2s infinite ease-in-out;
+    justify-content: center;
+    color: rgb(245, 127, 245);
+}
+#carousel .selected section a:hover {
+    color:rgb(228, 169, 82);
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 35px 5px rgba(131, 19, 131, 0.87);
+    }
+
+    20% {
+        box-shadow: 0px 0px 35px 10px rgba(131, 19, 131, 0.87);
+    }
+
+    40% {
+        box-shadow: 0px 0px 35px 15px rgba(131, 19, 131, 0.87);
+    }
+    
+    60% {
+        box-shadow: 0px 0px 35px 10px rgba(131, 19, 131, 0.87);
+    }
+    80% {
+        box-shadow: 0px 0px 45px 15px rgba(131, 19, 131, 0.87);
+    }
+    
+    100% {
+        box-shadow: 0px 0px 45px 5px rgba(131, 19, 131, 0.87);
+    }
+}
+#carousel :not(.selected) section a{
+    display: none;
+}
+
+
+
+#carousel .next {
+	z-index: 15;
+	left: 65%;
+}
+
+#carousel .next img {
+	width: 175px;
+}
+
+#carousel .nextRightSecond {
+	z-index: 4;
+	left: 80%;
+}
+
+#carousel .nextRightSecond img {
+	width: 175px;
+}
+.trait {
+    border-bottom-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+}
+.info {
+    color: rgb(248, 50, 0);
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-style: italic;
+    font-weight:bold;
+}
+.liste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(211, 226, 1);
+    font-size:16px;
+    width: 100%;
+    margin-bottom: 32px;
+    border-top-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+    font-family: Helvetica Neue;
+}
+.liste1 {
+    width: 33%;
+    color: coral;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+}
+.liste2 {
+    width: 33%;
+    color: coral;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+    
+}
+.liste3 {
+    width: 33%;
+    color: coral;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+}
+p {
+    align-items: left;
+    justify-content: left;
+}
+.bas-de-page {
+    display: flex;
+    background: black;
+    padding: 16px 64px 0px 64px;
+    color: white;
+    height: 200px;
+}
+.nous-contacter {
+    border-right-style: solid;
+    border-color: azure;
+    border-width: 1px;;
+    width: 33%;
+}
+.nous-contacter-text {
+    color: orange;
+    border-top-style: solid;
+    border-color: azure;
+    border-width: 1px;
+    padding: 14px;
+    text-decoration: underline;
+    margin-left: 8px;;
+}
+.reseaux {
+    width: 50%;
+}
